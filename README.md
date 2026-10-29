@@ -18,6 +18,8 @@ Replace after publishing: `https://github.com/MGC-design/ML_Classification_Model
 
 Run `python train_models.py` to regenerate saved models, `data/test_data.csv`, and `model_comparison.csv`.
 
+***Data Path :*** https://github.com/MGC-design/ML_Classification_Models_And_Evaluation_Metrics/tree/main/data
+
 ## Evaluation metrics
 Accuracy, AUC, Precision, Recall, F1, and Matthews Correlation Coefficient (MCC). The generated `model_comparison.csv` contains the final measured values.
 #### Path : https://github.com/MGC-design/ML_Classification_Models_And_Evaluation_Metrics/blob/main/model_comparison.csv
