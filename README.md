@@ -60,7 +60,6 @@ Push all files to GitHub, open https://share.streamlit.io/, choose the repositor
 
 ## Observations
 #### Review `model_comparison.csv`. Higher AUC and MCC indicate stronger ranking and balanced classification. 
-## Model Observations
 
 | ML Model | Observation |
 |-----------|------------|
