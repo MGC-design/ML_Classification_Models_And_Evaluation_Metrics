@@ -24,8 +24,6 @@ Run `python train_models.py` to regenerate saved models, `data/test_data.csv`, a
 Accuracy, AUC, Precision, Recall, F1, and Matthews Correlation Coefficient (MCC). The generated `model_comparison.csv` contains the final measured values.
 #### Path : https://github.com/MGC-design/ML_Classification_Models_And_Evaluation_Metrics/blob/main/model_comparison.csv
 
-## Model Comparison
-
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---------------|----------|------|-----------|--------|------|------|
 | Logistic Regression | 0.8289 | 0.9071 | 0.8207 | 0.8176 | 0.8191 | 0.6569 |
