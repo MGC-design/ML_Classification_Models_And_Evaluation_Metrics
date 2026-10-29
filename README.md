@@ -64,12 +64,12 @@ Push all files to GitHub, open https://share.streamlit.io/, choose the repositor
 
 | ML Model | Observation |
 |-----------|------------|
-| Logistic Regression | Strong overall performer with good interpretability and balanced performance. |
-| Decision Tree | Captures nonlinear relationships but may overfit compared with Logistic Regression. |
-| KNN | Competitive accuracy but prediction time increases with dataset size. |
-| Gaussian Naive Bayes | Fastest model but lower performance due to independence assumptions. |
+| Logistic Regression | Logistic Regression is interpretable. |
+| Decision Tree | Decision Tree provides nonlinear rules. |
+| KNN | KNN is distance-based and prediction-heavy. |
+| Gaussian Naive Bayes | Gaussian Naive Bayes is fast but assumes conditional independence. |
 | Support Vector Machine | Best overall performer with highest Accuracy, AUC, F1 and MCC. |
-| Overall Winner | Support Vector Machine (SVM) | 
+| Overall Winner | SVM captures nonlinear boundaries but takes longer to train. | 
 
 #### Declare the model with the strongest test AUC/MCC combination as the overall winner, so in this case <ins>Support Vector Machine(SVM)</ins> is clear winner.
 
