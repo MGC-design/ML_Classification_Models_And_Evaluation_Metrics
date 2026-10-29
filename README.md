@@ -7,7 +7,7 @@ Predict whether a bank client will subscribe to a term deposit (`deposit`) and c
 The Kaggle Bank Marketing Dataset used here contains 11,162 records, 16 input features, and one binary target. It includes demographic, financial, and campaign-related variables. Source: https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset/data
 
 ## c. GitHub Repository Link
-Replace after publishing: `https://github.com/<username>/<repository>`
+Replace after publishing: `https://github.com/MGC-design/ML_Classification_Models_And_Evaluation_Metrics`
 
 ## d. Models used
 - Logistic Regression
