@@ -54,8 +54,7 @@ Push all files to GitHub, open https://share.streamlit.io/, choose the repositor
 ##### Gaussian Naive Bayes is fast but assumes conditional independence; 
 ##### SVM captures nonlinear boundaries but takes longer to train. 
 
-#### Declare the model with the strongest test AUC/MCC combination as the overall winner.
-#### in this case <U> Support Vector Machine </U> is clear winner.
+#### Declare the model with the strongest test AUC/MCC combination as the overall winner, so in this case ** Support Vector Machine(SVM) ** is clear winner.
 
 
 ## Detailed Joblib Creation Process
