@@ -1,0 +1,28 @@
+{
+  "target": "deposit",
+  "features": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome"
+  ],
+  "model_files": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Decision Tree": "decision_tree.joblib",
+    "K-Nearest Neighbors": "knn.joblib",
+    "Gaussian Naive Bayes": "naive_bayes.joblib",
+    "Support Vector Machine": "svm.joblib"
+  }
+}
