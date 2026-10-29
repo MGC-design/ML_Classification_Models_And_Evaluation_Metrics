@@ -60,11 +60,16 @@ Push all files to GitHub, open https://share.streamlit.io/, choose the repositor
 
 ## Observations
 #### Review `model_comparison.csv`. Higher AUC and MCC indicate stronger ranking and balanced classification. 
-##### Logistic Regression is interpretable; 
-##### Decision Tree provides nonlinear rules; 
-##### KNN is distance-based and prediction-heavy; 
-##### Gaussian Naive Bayes is fast but assumes conditional independence; 
-##### SVM captures nonlinear boundaries but takes longer to train. 
+## Model Observations
+
+| ML Model | Observation |
+|-----------|------------|
+| Logistic Regression | Strong overall performer with good interpretability and balanced performance. |
+| Decision Tree | Captures nonlinear relationships but may overfit compared with Logistic Regression. |
+| KNN | Competitive accuracy but prediction time increases with dataset size. |
+| Gaussian Naive Bayes | Fastest model but lower performance due to independence assumptions. |
+| Support Vector Machine | Best overall performer with highest Accuracy, AUC, F1 and MCC. |
+| Overall Winner | Support Vector Machine (SVM) | 
 
 #### Declare the model with the strongest test AUC/MCC combination as the overall winner, so in this case <ins>Support Vector Machine(SVM)</ins> is clear winner.
 
