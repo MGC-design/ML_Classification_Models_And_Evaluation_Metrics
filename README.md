@@ -20,7 +20,7 @@ Run `python train_models.py` to regenerate saved models, `data/test_data.csv`, a
 
 ## Evaluation metrics
 Accuracy, AUC, Precision, Recall, F1, and Matthews Correlation Coefficient (MCC). The generated `model_comparison.csv` contains the final measured values.
-<ins> Path : </ins>
+#### Path : ####
 https://github.com/MGC-design/ML_Classification_Models_And_Evaluation_Metrics/blob/main/model_comparison.csv
 
 ## Streamlit features
