@@ -68,9 +68,7 @@ Push all files to GitHub, open https://share.streamlit.io/, choose the repositor
 | KNN | KNN is distance-based and prediction-heavy. |
 | Gaussian Naive Bayes | Gaussian Naive Bayes is fast but assumes conditional independence. |
 | Support Vector Machine | Best overall performer with highest Accuracy, AUC, F1 and MCC. |
-| Overall Winner | SVM captures nonlinear boundaries but takes longer to train. | 
-
-#### Declare the model with the strongest test AUC/MCC combination as the overall winner, so in this case <ins>Support Vector Machine(SVM)</ins> is clear winner.
+| ***Overall Winner*** | ***so in this case <ins>Support Vector Machine(SVM)</ins> is clear winner.*** | 
 
 
 ## Detailed Joblib Creation Process
