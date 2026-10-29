@@ -12,7 +12,22 @@ st.sidebar.info("The CSV must contain all 16 feature columns and the deposit tar
 if upload is None:
     st.info("Upload data/test_data.csv to begin.")
     if (ROOT/'model_comparison.csv').exists():
-        st.subheader("Saved test-set comparison"); st.dataframe(pd.read_csv(ROOT/'model_comparison.csv').style.format(precision=4),use_container_width=True)
+       comparison_df = pd.read_csv(
+    ROOT / "model_comparison.csv"
+)
+
+selected_row = comparison_df[
+    comparison_df["ML Model Name"] == model_name
+]
+
+st.subheader(
+    f"{model_name} Performance"
+)
+
+st.dataframe(
+    selected_row,
+    use_container_width=True
+)
 else:
     try:
         df=pd.read_csv(upload); required=set(meta['features']+[target]); missing=sorted(required-set(df.columns))
