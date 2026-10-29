@@ -55,7 +55,7 @@ Push all files to GitHub, open https://share.streamlit.io/, choose the repositor
 ##### SVM captures nonlinear boundaries but takes longer to train. 
 
 #### Declare the model with the strongest test AUC/MCC combination as the overall winner.
-#### in this case ### Support Vector Machine is clear winner.
+#### in this case <U> Support Vector Machine</U> is clear winner.
 
 
 ## Detailed Joblib Creation Process
