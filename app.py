@@ -10,24 +10,53 @@ upload=st.sidebar.file_uploader("Upload test CSV",type=['csv'])
 model_name=st.sidebar.selectbox("Select model",list(meta['model_files']))
 st.sidebar.info("The CSV must contain all 16 feature columns and the deposit target column.")
 if upload is None:
+
     st.info("Upload data/test_data.csv to begin.")
-    if (ROOT/'model_comparison.csv').exists():
-       comparison_df = pd.read_csv(
-    ROOT / "model_comparison.csv"
-)
 
-selected_row = comparison_df[
-    comparison_df["ML Model Name"] == model_name
-]
+    if (ROOT / "model_comparison.csv").exists():
 
-st.subheader(
-    f"{model_name} Performance"
-)
+        comparison_df = pd.read_csv(
+            ROOT / "model_comparison.csv"
+        )
 
-st.dataframe(
-    selected_row,
-    use_container_width=True
-)
+        selected = comparison_df[
+            comparison_df["ML Model Name"] == model_name
+        ].iloc[0]
+
+        st.subheader(f"{model_name} Performance")
+
+        col1, col2, col3 = st.columns(3)
+
+        col1.metric(
+            "Accuracy",
+            f"{selected['Accuracy']:.4f}"
+        )
+
+        col2.metric(
+            "AUC",
+            f"{selected['AUC']:.4f}"
+        )
+
+        col3.metric(
+            "Precision",
+            f"{selected['Precision']:.4f}"
+        )
+
+        col1.metric(
+            "Recall",
+            f"{selected['Recall']:.4f}"
+        )
+
+        col2.metric(
+            "F1",
+            f"{selected['F1']:.4f}"
+        )
+
+        col3.metric(
+            "MCC",
+            f"{selected['MCC']:.4f}"
+        )
+
 else:
     try:
         df=pd.read_csv(upload); required=set(meta['features']+[target]); missing=sorted(required-set(df.columns))
