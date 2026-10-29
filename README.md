@@ -48,11 +48,11 @@ Push all files to GitHub, open https://share.streamlit.io/, choose the repositor
 
 ## Observations
 Review `model_comparison.csv`. Higher AUC and MCC indicate stronger ranking and balanced classification. 
-Logistic Regression is interpretable; 
-Decision Tree provides nonlinear rules; 
-KNN is distance-based and prediction-heavy; 
-Gaussian Naive Bayes is fast but assumes conditional independence; 
-SVM captures nonlinear boundaries but takes longer to train. 
+#Logistic Regression is interpretable; 
+#Decision Tree provides nonlinear rules; 
+#KNN is distance-based and prediction-heavy; 
+#Gaussian Naive Bayes is fast but assumes conditional independence; 
+#SVM captures nonlinear boundaries but takes longer to train. 
 
 Declare the model with the strongest test AUC/MCC combination as the overall winner.
 
