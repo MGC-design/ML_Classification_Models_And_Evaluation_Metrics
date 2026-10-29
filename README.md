@@ -46,7 +46,7 @@ Use `data/test_data.csv` for testing the UI.
 ## Deployment
 Push all files to GitHub, open https://share.streamlit.io/, choose the repository and branch, set the main file to `app.py`, and deploy.
 
-**App link :** https://mlclassificationmodelsandevaluationmetrics.streamlit.app/#confusion-matrix
+**App link :** https://mlclassificationmodelsandevaluationmetrics.streamlit.app
 
 ## Observations
 #### Review `model_comparison.csv`. Higher AUC and MCC indicate stronger ranking and balanced classification. 
