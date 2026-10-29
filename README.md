@@ -96,3 +96,14 @@ Generated files:
 - knn.joblib
 - naive_bayes.joblib
 - svm.joblib
+
+  ## Workflow
+
+1. Load Bank Marketing Dataset
+2. Preprocess categorical and numerical features
+3. Split dataset into training and testing sets
+4. Train five classification algorithms
+5. Evaluate models using Accuracy, AUC, Precision, Recall, F1 and MCC
+6. Save trained models using Joblib
+7. Build Streamlit application
+8. Deploy application on Streamlit Community Cloud
