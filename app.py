@@ -3,7 +3,7 @@ import json, joblib, pandas as pd, streamlit as st, matplotlib.pyplot as plt, se
 from utils.evaluation import full_evaluation
 ROOT=Path(__file__).resolve().parent
 st.set_page_config(page_title="Bank Marketing Classification", page_icon="📊", layout="wide")
-st.title("Bank Marketing Classification Models")
+st.title("Bank Marketing Classification Models And it's Evaluation Metrics")
 st.caption("Upload labelled test data, select a saved model, and compare classification performance. Models are loaded without retraining.")
 meta=json.loads((ROOT/'saved_models'/'metadata.json').read_text()); target=meta['target']
 upload=st.sidebar.file_uploader("Upload test CSV",type=['csv'])
